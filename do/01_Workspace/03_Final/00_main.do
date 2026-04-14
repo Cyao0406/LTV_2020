@@ -40,7 +40,7 @@ version 17.0          	// 鎖定 Stata 版本，確保語法相容性
 
 **#### --- 設定本地路徑 (使用 Global 方便不同電腦切換) ---
 global local_root "C:/Users/user/OneDrive/桌面/work/114/RA with Tzu-Ting/LTV_2020"
-global dta_pasth "$local_root/data"
+global dta_path "$local_root/data"
 global rdta_path "$local_root/data/rdata"
 global workdta_path "$local_root/data/wdata"
 global figures_path "${local_root}/figures"
@@ -48,7 +48,7 @@ global results_path "$local_root/results"
 global temp "$local_root/temp" // 暫存檔 tempfile
 capture mkdir "$temp"
 
-cd "$root" // 設定工作檔案夾 
+cd "$local_root" // 設定工作檔案夾 
 
 **#### --- 設定雲端路徑 (使用 Global 方便不同電腦切換) ---
 global dropbox_root "C:/Users/user/Dropbox/LTV_財資版/data"
