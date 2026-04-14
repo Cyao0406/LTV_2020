@@ -56,6 +56,8 @@ global dr_raw_path "$dropbox_root/data/rdata"
 global dr_work_path "$dropbox_root/data/wdata"
 global dr_figures_path "${dropbox_root}/figures"
 global dr_results_path "$dropbox_root/results"
+global dr_temp "$dropbox_root/temp" // 暫存檔 tempfile
+capture mkdir "$dr_temp"
 
 **#### --- 設定研究設計 (使用 Global 方便不同電腦切換) ---
 global proj_ver = "S_Lag_M_TI_Tr_D3" // 研究版本
